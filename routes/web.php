@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/productos', 'ProductoController@index')->name('productos.index');
