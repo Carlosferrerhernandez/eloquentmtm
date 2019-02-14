@@ -23,25 +23,6 @@ tr:nth-child(even) {
 
 <h2>Tabla productos</h2>
 
-{{-- <table>
-  <tr>
-    <th>Producto</th>
-    <th>Presentaciones</th>
-    <th>Valor</th>
-  </tr>
-  @foreach($productos as $producto)
-  <tr>
-    <th>{{$producto->denominacion}}</th>
-
-    @foreach($productos->presentaciones as $presentacion)
-      <th>{{ $presentacion->denominacion }}</th>
-      <th>{{ $presentacion->pivot->costo}}</th>
-    @endforeach
-
-  </tr>
-  @endforeach
-</table> --}}
-
 <table>
   <tr>
     <th>Producto</th>
