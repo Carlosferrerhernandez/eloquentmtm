@@ -16,8 +16,16 @@ class CreateProductPresentTable extends Migration
         Schema::create('product_present', function (Blueprint $table) {
             $table->increments('id');
 
+            /*
+            *   Creacion de llaves foraneas con tabla productos.
+            */
+
             $table->unsignedInteger('producto_id');
             $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade');
+
+            /*
+            *   Creacion de llaves foraneas con tabla presentaciones.
+            */
 
             $table->unsignedInteger('presentacion_id');
             $table->foreign('presentacion_id')->references('id')->on('presentaciones')->onDelete('cascade');
