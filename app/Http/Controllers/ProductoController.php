@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Producto;
+use App\Presentacion;
 
 class ProductoController extends Controller
 {
@@ -19,10 +19,11 @@ class ProductoController extends Controller
         *   Consulta de presentaciones de un producto
         */
 
-        $productos = Producto::with('presentaciones')->get();
+        $presentaciones = Presentacion::with('productos')->get();
 
-        /*dd($productos);*/
 
-        return view('productos.index')->with(['productos'=> $productos]);
+        /*dd($presentaciones);*/
+
+        return view('productos.index')->with(['presentaciones'=> $presentaciones]);
     }
 }

@@ -23,7 +23,9 @@ class Product_PresentSeeder extends Seeder
 
 		$producto_id2 = Producto::select('id')->where('denominacion', '=', 'Portatil HP')->value('id');
 
-		$presentacion_id2 =Presentacion::select('id')->where('denominacion', '=', 'Modelo G53-89')->value('id');
+		$presentacion_id2 = Presentacion::select('id')->where('denominacion', '=', 'Modelo G53-89')->value('id');
+
+        $presentacion_id3 = Presentacion::select('id')->where('denominacion', '=', 'Modelo 86LA-12')->value('id');
 
 		/*
 		*	Insersiones de datos.
@@ -42,6 +44,13 @@ class Product_PresentSeeder extends Seeder
         	'producto_id' => $producto_id2,
         	'presentacion_id' => $presentacion_id2,
         	'costo' => '2389000'
+        ]);
+
+        DB::table('product_present')->insert([
+
+            'producto_id' => $producto_id2,
+            'presentacion_id' => $presentacion_id3,
+            'costo' => '1289000'
         ]);
     }
 }

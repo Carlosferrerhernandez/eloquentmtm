@@ -32,7 +32,7 @@ class ProductoSeeder extends Seeder
         *   Ejecutando factory para crear 12 registros.
         */
 
-        factory(Producto::class, 12)->create();
+        /*factory(Producto::class, 1)->create();*/
 
     }
 }
