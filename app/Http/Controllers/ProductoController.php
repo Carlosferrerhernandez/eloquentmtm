@@ -14,10 +14,12 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        //
-        $productos = Producto::with('presentaciones')->get();
+        
+        /*
+        *   Consulta de presentaciones de un producto
+        */
 
-        /*$productos = Producto::all();*/
+        $productos = Producto::with('presentaciones')->get();
 
         /*dd($productos);*/
 
