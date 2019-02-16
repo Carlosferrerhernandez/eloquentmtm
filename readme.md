@@ -15,9 +15,9 @@ Este repositorio a sido implementado para mostrar como ejecutar relaciones N + N
 * `composer install`
 * `cp .env.example .env`
 * `php artisan key:generate`
-* Add your database info in *.env*
-* `php artisan migrate:refresh --seed` para crear las tablas y ejecutar los registros con sus seeders y factorys
-* `php artisan serve` inice el servicio y verifique en http:localhost:8000/
+*  Añade la información de tu base de datos en *.env*
+* `php artisan migrate:refresh --seed` Ejecutar las migraciones y los seeder para ingresar los registros.
+* `php artisan serve` inicie el servicio y verifique en http:localhost:8000/
 
 ### Credits ###
 * Taylor Otwell (Creator of Laravel)
