@@ -22,5 +22,5 @@ Este repositorio a sido implementado para mostrar como ejecutar relaciones N + N
 ### Credits ###
 * Taylor Otwell (Creator of Laravel)
 * Carlos Ferrer
-* Desarrollado para apoyar en Laravel Colombia.
+* Desarrollado para apoyar en comunidad Laravel Colombia.
 
